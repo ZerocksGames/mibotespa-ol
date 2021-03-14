@@ -213,13 +213,13 @@ client.on('grupo-participantes-actualización', async (anu) => {
 					break
 				case 'kapankah':
 					kapankah = body.slice(1)
-					const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
+					const kapan =['Mañana ',' Pasado mañana ',' Más temprano ',' 4 días más ',' 5 días más ',' 6 días más ',' 1 semana otra vez ',' 2 semanas más ',' 3 semanas más ', '1 mes nuevamente', '2 meses nuevamente', '3 meses nuevamente', '4 meses nuevamente', '5 meses nuevamente', '6 meses nuevamente', '1 año más', '2 años más', '3 Más años ',' 4 años más ',' 5 años más ',' 6 años más ',' 1 siglo más ',' 3 días más']
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
 					break
            case 'apakah':
 					apakah = body.slice(1)
-					const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi']
+					const apa =['Sí ',' No ',' Podría ser ',' Intente repetir']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 					break
